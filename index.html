@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <h1>What's up,<span class="input-container"><input type="text" class ="Input" placeholder="Name here"/></span></h1>
+            <p>CREATE A TODO</p>
+            <p class="textline3">What's on your todo list?</p>
+        <form id="input-container">
+            <input type="text" id ="taskInput" placeholder="e.g. get a milk"/>
+        </form>
+            <p class="textline4">Pick a category</p>
+        <div class="category-block">
+            <div class="block1" onclick="toggleCategory('Business')" id="businessButton"><button class="round-button"></button><p>Business</p></div>
+            <div class="block2" onclick="toggleCategory('Personal')" id="personalButton"><button class="round-button2"></button><p>Personal</p></div>
+        </div>
+        <button class="btn-add" onclick="addTodo()">Add todo</button>
+        <p>TODO LIST</p>
+        <ul id="list-container">
+           <!--<li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
